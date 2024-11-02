@@ -25,10 +25,5 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.4.3
         with:
-          gradle-version: current
-          wrapper-cache-enabled: true
-          dependencies-cache-enabled: true
-          configuration-cache-enabled: true
-          arguments: assembleRelease
           name: MVVMBase.apk
           path: app/build/outputs/apk/debug/app-debug.apk
